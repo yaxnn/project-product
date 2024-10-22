@@ -11,8 +11,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@chakra-ui/react": "^2.10.3",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "framer-motion": "^11.11.9",
     "mongoose": "^8.7.1",
     "nodemon": "^3.1.7"
   }
