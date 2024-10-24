@@ -1,5 +1,6 @@
 import { Box, Button, Container, Heading, Input, useColorModeValue, useToast, VStack } from "@chakra-ui/react";
 import { useState } from "react";
+import {useNavigate} from "react-router-dom"
 import { useProductStore } from "../store/product";
 
 const CreatePage = () => {
@@ -9,6 +10,7 @@ const CreatePage = () => {
 		image: "",
 	});
 	const toast = useToast();
+	const navigate = useNavigate()
 
 	const { createProduct } = useProductStore();
 
@@ -28,6 +30,7 @@ const CreatePage = () => {
 				status: "success",
 				isClosable: true,
 			});
+			navigate("/")
 		}
 		setNewProduct({ name: "", price: "", image: "" });
 	};
